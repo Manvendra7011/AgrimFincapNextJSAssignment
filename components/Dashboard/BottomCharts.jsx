@@ -33,7 +33,7 @@ export default function BottomCharts() {
 
 
 
-  <div className="text-[12px] space-y-2 text-black">
+  <div className="text-[12px] space-y-4 text-black">
     
     <div className="flex items-center justify-between gap-6">
       <div className="flex items-center gap-2 cursor-pointer rounded-full px-1 hover:bg-gray-100 transition-colors">
