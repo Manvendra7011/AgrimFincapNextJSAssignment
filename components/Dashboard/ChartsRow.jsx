@@ -8,10 +8,10 @@ function TotalUsersHeader() {
 
       <div className="ml-auto flex items-center gap-4">
         <span className="flex items-center gap-1 text-black">
-          ● This year
+        <span className="w-2 h-2 rounded-full bg-black" />This year
         </span>
         <span className="flex items-center gap-1 text-black">
-          ● Last year
+          <span className="w-2 h-2 rounded-full bg-[#7DB7FF]" /> Last year
         </span>
       </div>
     </div>
