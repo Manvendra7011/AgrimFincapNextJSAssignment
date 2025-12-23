@@ -1,11 +1,10 @@
 import TotalUsersChart from "./TotalUserCharts";
-
 function TotalUsersHeader() {
   return (
     <div className="flex items-center gap-4 mb-4 text-[12px]">
       <span className="text-black font-bold">Total Users</span>
-      <span className="text-black/40">Total Projects</span>
-      <span className="text-black/40">Operating Status</span>
+      <span className="text-black/40 hover:text-black">Total Projects</span>
+      <span className="text-black/40 hover:text-black">Operating Status</span>
 
       <div className="ml-auto flex items-center gap-4">
         <span className="flex items-center gap-1 text-black">
@@ -23,12 +22,12 @@ const websites = ["Google","YouTube","Instagram","Pinterest","Facebook","Twitter
 
 function TrafficByWebsite() {
   const data = [
-    { name: "Google", primary: "w-3", secondary: "w-2" },
-    { name: "YouTube", primary: "w-4", secondary: "w-3" },
-    { name: "Instagram", primary: "w-3", secondary: "w-2" },
-    { name: "Pinterest", primary: "w-5", secondary: "w-4" },
-    { name: "Facebook", primary: "w-2", secondary: "w-2" },
-    { name: "Twitter", primary: "w-3", secondary: "w-3" },
+    { name: "Google", bars: ["w-3", "w-2", "w-1"] },
+    { name: "YouTube", bars: ["w-4", "w-3", "w-2"] },
+    { name: "Instagram", bars: ["w-3", "w-2", "w-1"] },
+    { name: "Pinterest", bars: ["w-5", "w-4", "w-2"] },
+    { name: "Facebook", bars: ["w-2", "w-2", "w-1"] },
+    { name: "Twitter", bars: ["w-3", "w-3", "w-2"] },
   ];
 
   return (
@@ -43,19 +42,15 @@ function TrafficByWebsite() {
             key={item.name}
             className="flex items-center justify-between"
           >
-            {/* Website name */}
             <span className="text-[12px] text-black">
               {item.name}
             </span>
 
-            {/* Two tiny bars */}
+            {/* THREE micro bars */}
             <div className="flex items-center gap-1">
-              <span
-                className={`h-[2px] ${item.primary} bg-black rounded-full`}
-              />
-              <span
-                className={`h-[2px] ${item.secondary} bg-gray-300 rounded-full`}
-              />
+              <span className={`h-[2px] ${item.bars[0]} bg-black rounded-full`} />
+              <span className={`h-[2px] ${item.bars[1]} bg-gray-400 rounded-full`} />
+              <span className={`h-[2px] ${item.bars[2]} bg-gray-300 rounded-full`} />
             </div>
           </div>
         ))}
@@ -65,17 +60,23 @@ function TrafficByWebsite() {
 }
 
 
+
 export default function ChartsRow() {
   return (
-    <div className="grid grid-cols-3 gap-4">
-      <div className="col-span-2 bg-white rounded-2xl p-5">
+    <div className="grid grid-cols-4 gap-4">
+      
+      {/* Line chart – wider */}
+      <div className="col-span-3 bg-white rounded-2xl p-5">
         <TotalUsersHeader />
         <TotalUsersChart />
       </div>
 
+      {/* Traffic by Website – narrower */}
       <div className="bg-white rounded-2xl p-5">
         <TrafficByWebsite />
       </div>
+
     </div>
   );
 }
+

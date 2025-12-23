@@ -13,25 +13,39 @@ export default function TrafficByLocationChart() {
     colors: ["#111111", "#7DB7FF", "#7BE089", "#A7C0E8"],
     dataLabels: { enabled: false },
     legend: { show: false },
+
     stroke: {
-      width: 4,
-      lineCap: "round", // rounded segments
+      width: 6,          // ✅ thicker stroke
+      lineCap: "round",  // ✅ rounded edges
     },
+
     plotOptions: {
       pie: {
         donut: {
-          size: "65%",
+          size: "58%",   // ✅ smaller hole = visible rounding
         },
-        expandOnClick: true,
+        expandOnClick: true, // best supported interaction
       },
     },
+
     states: {
-      hover: { filter: { type: "none" } },
-      active: { filter: { type: "none" } },
+      hover: {
+        filter: { type: "none" },
+      },
+      active: {
+        filter: { type: "none" },
+      },
     },
   };
 
   const series = [52.1, 22.8, 13.9, 11.2];
 
-  return <Chart options={options} series={series} type="donut" height={220} />;
+  return (
+    <Chart
+      options={options}
+      series={series}
+      type="donut"
+      height={220}
+    />
+  );
 }

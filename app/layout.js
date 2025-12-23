@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 
           <div className="flex flex-col flex-1">
             <Navbar />
-            <main className="flex-1 p-6 overflow-y-auto bg-gray-50">
+            <main className="flex-1 p-6 bg-gray-50">
               {children}
             </main>
           </div>
