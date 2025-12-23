@@ -32,15 +32,17 @@ function TrafficByWebsite() {
 
   return (
     <>
-      <h3 className="text-[13px] font-bold mb-4 text-black">
+      <h3 className="text-[13px] font-bold mb-4 text-black transition-transform duration-200 ease-out
+               hover:translate-x-[4px]">
         Traffic by Website
       </h3>
 
-      <div className="space-y-3">
+      <div className="space-y-3 group">
         {data.map((item) => (
           <div
             key={item.name}
-            className="flex items-center justify-between"
+            className="flex items-center justify-between transition-transform duration-200 ease-out
+                   group-hover:translate-x-[4px]"
           >
             <span className="text-[12px] text-black">
               {item.name}

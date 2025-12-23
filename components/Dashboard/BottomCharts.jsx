@@ -36,7 +36,7 @@ export default function BottomCharts() {
   <div className="text-[12px] space-y-2 text-black">
     
     <div className="flex items-center justify-between gap-6">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 cursor-pointer rounded-full px-1 hover:bg-gray-100 transition-colors">
         <span className="w-2 h-2 rounded-full bg-black" />
         <span>United States</span>
       </div>
@@ -44,7 +44,7 @@ export default function BottomCharts() {
     </div>
 
     <div className="flex items-center justify-between gap-6">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 cursor-pointer rounded-full px-1 hover:bg-gray-100 transition-colors">
         <span className="w-2 h-2 rounded-full bg-[#7DB7FF]" />
         <span>Canada</span>
       </div>
@@ -52,7 +52,7 @@ export default function BottomCharts() {
     </div>
 
     <div className="flex items-center justify-between gap-6">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 cursor-pointer rounded-full px-1 hover:bg-gray-100 transition-colors">
         <span className="w-2 h-2 rounded-full bg-[#7BE089]" />
         <span>Mexico</span>
       </div>
@@ -60,7 +60,7 @@ export default function BottomCharts() {
     </div>
 
     <div className="flex items-center justify-between gap-6">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 cursor-pointer rounded-full px-1 hover:bg-gray-100 transition-colors">
         <span className="w-2 h-2 rounded-full bg-[#A7C0E8]" />
         <span>Other</span>
       </div>
