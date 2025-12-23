@@ -21,7 +21,7 @@ function NotificationItem({
   return (
     <div className="flex gap-3 group cursor-pointer">
       
-      {/* Icon wrapper */}
+
       <div
         className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
         style={{ backgroundColor: iconBg }}
@@ -29,7 +29,7 @@ function NotificationItem({
         <Icon className="w-4 h-4" style={{ color: iconColor }} />
       </div>
 
-      {/* Text block */}
+
       <div
         className="transition-transform duration-200 ease-out
                    group-hover:translate-x-[4px]"
@@ -60,7 +60,7 @@ function ActivityItem({ text, time, image }) {
         <div className="w-px flex-1 bg-gray-200 mt-1" />
       </div>
 
-      {/* Text block */}
+
       <div
         className="transition-transform duration-200 ease-out
                    group-hover:translate-x-[4px]"
@@ -97,7 +97,7 @@ export default function RightSidebar() {
   return (
     <aside className="w-80 bg-white px-6 py-6 space-y-8">
       
-      {/* Notifications */}
+
       <Section title="Notifications">
         <NotificationItem icon = {Bug} iconBg="#EEF0FF" text="You fixed a bug." time="Just now" />
         <NotificationItem icon = {User} iconBg="#EAF4FF" text="New user registered." time="59 minutes ago" />
@@ -105,7 +105,6 @@ export default function RightSidebar() {
         <NotificationItem icon = {Radio} iconBg="#EAF4FF" text="Andi Lane subscribed to you." time="Today, 11:59 AM" />
       </Section>
 
-      {/* Activities */}
       <Section title="Activities">
         <ActivityItem text="Changed the style." time="Just now" image = "/1.png" />
         <ActivityItem text="Released a new version." time="59 minutes ago" image = "/2.png" />
@@ -114,7 +113,6 @@ export default function RightSidebar() {
         <ActivityItem text="Deleted a page in Project X." time="Feb 2, 2025" image = "/5.png" />
       </Section>
 
-      {/* Contacts */}
       <Section title="Contacts">
         <ContactItem name="Natali Craig" image = "/nat.png" />
         <ContactItem name="Drew Cano" image = "/drew.png" />

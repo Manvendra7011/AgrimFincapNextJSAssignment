@@ -7,36 +7,35 @@ export default function Navbar() {
     <header className="h-16 bg-white border-b">
       <div className="h-full px-6 flex items-center justify-between">
         
-        {/* Left */}
+
         <div className="flex items-center gap-2">
-  {/* Panel icon (circle hover) */}
+
   <div className="p-2 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
     <PanelRight className="h-4 w-4 text-black" />
   </div>
 
-  {/* Star icon (circle hover) */}
+  
   <div className="p-2 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
     <Star className="h-4 w-4 text-black" />
   </div>
 
-  {/* Dashboards */}
+
   <div className="px-3 py-1.5 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
     <span className="text-sm text-gray-500">Dashboards</span>
   </div>
 
-  {/* Slash (no hover) */}
+
   <span className="text-sm text-gray-400">/</span>
 
-  {/* Default */}
+
   <div className="px-3 py-1.5 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
     <span className="text-sm text-black">Default</span>
   </div>
 </div>
 
-       {/* Right */}
 <div className="flex items-center gap-2">
   
-  {/* Search */}
+
   <div className="relative">
     <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
     <input
@@ -56,22 +55,22 @@ export default function Navbar() {
     />
   </div>
 
-  {/* Sun */}
+
   <div className="p-2 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
     <Sun className="h-4 w-4 text-black" />
   </div>
 
-  {/* History */}
+
   <div className="p-2 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
     <History className="h-4 w-4 text-black" />
   </div>
 
-  {/* Bell */}
+
   <div className="p-2 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
     <Bell className="h-4 w-4 text-black" />
   </div>
 
-  {/* PanelRight */}
+ 
   <div className="p-2 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
     <PanelRight className="h-4 w-4 text-black" />
   </div>

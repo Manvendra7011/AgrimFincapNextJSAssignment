@@ -15,16 +15,16 @@ export default function TrafficByLocationChart() {
     legend: { show: false },
 
     stroke: {
-      width: 6,          // ✅ thicker stroke
-      lineCap: "round",  // ✅ rounded edges
+      width: 6,         
+      lineCap: "round",  
     },
 
     plotOptions: {
       pie: {
         donut: {
-          size: "58%",   // ✅ smaller hole = visible rounding
+          size: "58%",   
         },
-        expandOnClick: true, // best supported interaction
+        expandOnClick: true, 
       },
     },
 

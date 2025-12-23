@@ -8,13 +8,13 @@ export default function TotalUsersChart() {
   const options = {
     chart: {
       toolbar: { show: false },
-      width: "100%", // ✅ REQUIRED in grid layouts
+      width: "100%", 
     },
 
     stroke: {
       curve: "smooth",
       width: [2, 2],
-      dashArray: [0, 6], // blue dotted
+      dashArray: [0, 6],
     },
 
     colors: ["#111111", "#8FB4FF"],

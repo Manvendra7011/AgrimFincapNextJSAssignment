@@ -101,7 +101,7 @@ export default function Sidebar() {
   </ul>
 </div>
 
-      {/* Menu */}
+     
       {menu.map((section) => (
         <div key={section.title} className="mb-6 mt-6">
           <p className="text-xs text-black uppercase mb-2">
@@ -113,7 +113,7 @@ export default function Sidebar() {
 
   return (
     <div key={item.name}>
-      {/* MAIN ITEM */}
+    
       <div
         onClick={() =>
           isUserProfile && setIsUserProfileOpen((prev) => !prev)
@@ -126,7 +126,7 @@ export default function Sidebar() {
           }
         `}
       >
-        {/* Arrow */}
+        
         {item.hasArrow && (
           <ChevronRight
             className={`h-4 w-4 text-gray-400 transition-transform duration-200
@@ -141,7 +141,7 @@ export default function Sidebar() {
         
         <item.icon className="h-4 w-4" />
 
-        {/* Label */}
+       
         <span>{item.name}</span>
       </div>
 

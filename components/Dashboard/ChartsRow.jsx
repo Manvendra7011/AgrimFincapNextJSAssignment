@@ -46,7 +46,7 @@ function TrafficByWebsite() {
               {item.name}
             </span>
 
-            {/* THREE micro bars */}
+
             <div className="flex items-center gap-1">
               <span className={`h-[2px] ${item.bars[0]} bg-black rounded-full`} />
               <span className={`h-[2px] ${item.bars[1]} bg-gray-400 rounded-full`} />
@@ -65,13 +65,13 @@ export default function ChartsRow() {
   return (
     <div className="grid grid-cols-4 gap-4">
       
-      {/* Line chart – wider */}
+
       <div className="col-span-3 bg-white rounded-2xl p-5">
         <TotalUsersHeader />
         <TotalUsersChart />
       </div>
 
-      {/* Traffic by Website – narrower */}
+ 
       <div className="bg-white rounded-2xl p-5">
         <TrafficByWebsite />
       </div>

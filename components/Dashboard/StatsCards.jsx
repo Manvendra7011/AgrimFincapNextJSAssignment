@@ -46,12 +46,12 @@ export default function StatsCards() {
           </p>
 
           <div className="flex items-center gap-2 mt-2">
-            {/* Value */}
+
             <span className="text-[24px] font-semibold text-black">
               {s.value}
             </span>
 
-            {/* Delta + Arrow */}
+   
             <div className="flex items-center gap-1 text-[12px] text-black/60">
               {s.delta}
               {s.trend === "up" ? (
